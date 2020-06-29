@@ -113,7 +113,7 @@ static const char *colorname[] = {
 	"red",
 	"green",
 	"yellow",
-	"#5c5cff",
+	"DodgerBlue1",
 	"magenta",
 	"cyan",
 	"white",
