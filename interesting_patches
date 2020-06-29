@@ -1,0 +1,13 @@
+https://st.suckless.org/patches/ligatures/ <-- *YES*
+https://st.suckless.org/patches/dracula/ <----  YES
+https://st.suckless.org/patches/newterm/ <----  pretty important
+https://st.suckless.org/patches/relativeborder/ <---- might be relevant as my DPIs seem pretty different
+https://st.suckless.org/patches/scrollback/ <--- because fuck tmux
+https://st.suckless.org/patches/xclearwin/ (if visual glitches occur)
+https://st.suckless.org/patches/alpha_focus_highlight/
+https://st.suckless.org/patches/externalpipe/
+https://st.suckless.org/patches/visualbell2/ (ehh, maybe)
+https://st.suckless.org/patches/externalpipe-signal/ (if externalpipe is installed)
+https://st.suckless.org/patches/clipboard/ (if clipboard doesn't work already)
+https://st.suckless.org/patches/delkey/ (if it's relevant at all)
+https://st.suckless.org/patches/desktopentry/
