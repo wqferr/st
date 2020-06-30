@@ -1,7 +1,5 @@
-https://st.suckless.org/patches/anysize/st-anysize-0.8.1.diff <----- important, turns out
 https://st.suckless.org/patches/relativeborder/ <---- might be relevant as my DPIs seem pretty different
 https://st.suckless.org/patches/xclearwin/ (if visual glitches occur)
-https://st.suckless.org/patches/alpha_focus_highlight/
 https://st.suckless.org/patches/externalpipe/
 https://st.suckless.org/patches/visualbell2/ (ehh, maybe)
 https://st.suckless.org/patches/externalpipe-signal/ (if externalpipe is installed)
