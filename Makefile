@@ -45,6 +45,10 @@ install: st
 	mkdir -p $(DESTDIR)$(PREFIX)/bin
 	cp -f st $(DESTDIR)$(PREFIX)/bin
 	chmod 755 $(DESTDIR)$(PREFIX)/bin/st
+	cp -f external/editscreen.sh $(DESTDIR)$(PREFIX)/bin/st-editscreen
+	chmod 755 $(DESTDIR)$(PREFIX)/bin/st-editscreen
+	cp -f external/linkgrabber.sh $(DESTDIR)$(PREFIX)/bin/st-linkgrabber
+	chmod 755 $(DESTDIR)$(PREFIX)/bin/st-linkgrabber
 	mkdir -p $(DESTDIR)$(MANPREFIX)/man1
 	sed "s/VERSION/$(VERSION)/g" < st.1 > $(DESTDIR)$(MANPREFIX)/man1/st.1
 	chmod 644 $(DESTDIR)$(MANPREFIX)/man1/st.1
@@ -54,5 +58,7 @@ install: st
 uninstall:
 	rm -f $(DESTDIR)$(PREFIX)/bin/st
 	rm -f $(DESTDIR)$(MANPREFIX)/man1/st.1
+	rm -f $(DESTDIR)$(PREFIX)/bin/st-linkgrabber
+	rm -f $(DESTDIR)$(PREFIX)/bin/st-editscreen
 
 .PHONY: all options clean dist install uninstall
