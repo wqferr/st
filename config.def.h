@@ -165,9 +165,9 @@ static unsigned int mousebg = 0;
  */
 static unsigned int defaultattr = 11;
 
-static const char *openurlcmd[] = {
-    "st-linkgrabber", "externalpipe", NULL
-};
+/* Commands */
+static const char *openurlcmd[] = { "st-linkgrabber", "externalpipe", NULL };
+static const char *editscreencmd[] = { "st-editscreen", "externalpipe", NULL };
 
 /*
  * Force mouse select/shortcuts while mask is active (when MODE_MOUSE is set).
@@ -211,6 +211,7 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,                  XK_Num_Lock,    numlock,        {.i =  0} },
 	{ TERMMOD,                  XK_Return,      newterm,        {.i =  0} },
 	{ ControlMask | ShiftMask,  XK_U,           externalpipe, 	{.v = openurlcmd} },
+	{ ControlMask | ShiftMask,  XK_E,           externalpipe, 	{.v = editscreencmd} },
 };
 
 /*
