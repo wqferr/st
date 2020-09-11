@@ -1,5 +1,4 @@
 #!/usr/bin/env zsh
 regex='(((http|https|ftp|gopher)|mailto)[.:][^ >"\t]*|www\.[-a-z0-9.]+)[^ .,;\t>"'\''>\):]'
-# TODO maybe use fzf instead of dmenu? might be hard
-url=$(grep -Po "$regex" | uniq | dmenu -p "Go:" -w "$WINDOWID" -g 1 -l 7) || exit
+url=$(tac | grep -m 20 -Po "$regex" | sort -u | dmenu -p "Go:" -w "$WINDOWID" -g 1 -l 5) || exit
 firefox "$url"
