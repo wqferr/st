@@ -7,6 +7,7 @@
  */
 static char *font = "Fira Code:pixelsize=18:antialias=true:autohint=true";
 static int borderpx = 0;
+static char *defaultclass = "st";
 
 /*
  * What program is execed by st depends of these precedence rules:
